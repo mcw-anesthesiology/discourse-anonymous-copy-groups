@@ -1,0 +1,3 @@
+en:
+  site_settings:
+    anonymous_copy_groups_enabled: "Copy a user's groups to their anonymous users on creation"
