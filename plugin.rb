@@ -6,6 +6,8 @@
 enabled_site_setting :anonymous_copy_groups_enabled
 
 module AnonymousCopyGroupsShadowCreator
+	private
+
 	def create_shadow!
 		shadow = super
 
