@@ -1,6 +1,6 @@
 # name: anonymous-copy-groups
 # about: A basic plugin to naively copy a user's groups to their anonymous users
-# version: 0.0.1
+# version: 0.0.2
 # authors: Jacob Mischka <jmischka@mcw.edu>
 
 enabled_site_setting :anonymous_copy_groups_enabled
@@ -14,6 +14,8 @@ module AnonymousCopyGroupsShadowCreator
 		for group in user.groups do
 			group.add(shadow)
 		end
+
+		shadow.reload
 
 		shadow
 	end
